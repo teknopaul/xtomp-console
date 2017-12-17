@@ -1,0 +1,20 @@
+Package: xtomp-console
+Version: @PACKAGE_VERSION@
+Section: 
+Priority: optional
+Architecture: all
+Essential: no
+Depends: xtomp
+Pre-Depends: 
+Recommends: 
+Suggests: 
+Installed-Size: @SIZE@
+Maintainer: teknopaul [teknopaul@tp23.org]
+Conflicts: 
+Replaces: 
+Provides: xtomp-console
+Description: GUI for xtomp
+
+
+
+

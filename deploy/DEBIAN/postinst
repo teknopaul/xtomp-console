@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+#
+#
+grep ^xtomp: /etc/group  >/dev/null || groupadd xtomp
+grep ^xtompc: /etc/passwd >/dev/null || useradd -g xtomp -M --no-user-group xtompc
+
+mkdir -p /var/log/xtomp/
+chgrp xtomp /var/log/xtomp/
+chmod 775 /var/log/xtomp/
+touch /var/log/xtomp/xtomp-console.log
+chown xtompc /var/log/xtomp/xtomp-console.log
+systemctl daemon-reload
+exit 0

@@ -1,0 +1,9 @@
+#!/bin/bash -e
+#
+# start the xtomp-console server
+#
+cd $(dirname $0)/../lib
+
+mkdir -p /var/run/xtomp
+echo $$ > /var/run/xtomp/xtomp-console.pid
+exec node xtomp-console 2>&1 > /var/log/xtomp/xtomp-console.log

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>xtomp - console</title>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="jquery.xgen.js"></script>
+		<script type="text/javascript" src="xtomp-frame.js"></script>
+		<script type="text/javascript" src="xtomp-over-websockets.js"></script>
+		<script type="text/javascript" src="xtomp-console-controller.js"></script>
+		<script type="text/javascript" src="xtomp-console-view.js"></script>
+		<script type="text/javascript" src="chart.js"></script>
+		<link rel="stylesheet" type="text/css" href="xtomp-view.css" />
+	</head>
+	<body>
+		<div id="container">
+			<div id="wrapper">
+				<div id="title">
+					<div id="title-dest">destination: <strong><span id="destination"></span></strong>
+					<span id="title-stat">
+						up: <strong><span id="up"></span></strong>
+						cc: <strong><span id="cc"></span></strong>
+						Σ: <strong><span id="Σ"></span></strong>
+						Σµ: <strong><span id="Σµ"></span></strong>
+					</span>
+					</div>
+				</div>
+				<div id="leftcol">
+					topics
+					<ul id="topic-menu">
+					</ul>
+
+				</div>
+				<div id="centercol">
+					<canvas id="usage" width="420" height="150"></canvas>
+					<form onsend="return false">
+						<div id="send" >
+							<textarea id="message" ></textarea>
+							<div class="form-buttons">
+								<button type="button" id="connect-button">connect</button>
+								<button type="button" id="disconnect-button">disconnect</button>
+								<button type="button" id="subscribe-button">subscribe</button>
+								<label>
+									<input type="checkbox" value="" id="receipt">
+									receipt
+								</label>
+								<button type="button" id="send-button">send</button>
+							</div>
+						</div>
+					</form>
+					<div id="messages">
+					</div>
+				</div>
+				<div id="rightcol">
+					<div id="rightinfo">
+						<table>
+							<tbody>
+								<!--"sz":0,"q":0,"Δ":0,"Σ":0-->
+								<tr>
+									<th>max-sz:</th>
+									<td id="dest-max-sz"></td>
+								</tr>
+								<tr>
+									<th>sz:</th>
+									<td id="dest-sz"></td>
+								</tr>
+								<tr>
+									<th>max-q:</th>
+									<td id="dest-max-q"></td>
+								</tr>
+								<tr>
+									<th>q:</th>
+									<td id="dest-q"></td>
+								</tr>
+								<tr>
+									<th>Δ:</th>
+									<td id="dest-Δ"></td>
+								</tr>
+								<tr>
+									<th>Σ:</th>
+									<td id="dest-Σ"></td>
+								</tr>
+							</tbody>
+						</table>
+						<img id="boot-logo" src="xtomp.png"/>
+						<div>server: <span id="xtompVer"></span><br/><br/></div>
+						<a href="https://github.com/teknopaul/xtomp">xtomp on github</a><br>
+						<a href="http://xtomp.tp23.org">xtomp.tp23.org</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="status">...</div>
+		<div id="hidden"/>
+	</body>
+</html>

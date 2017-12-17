@@ -1,0 +1,15 @@
+{
+  "node": true,
+  "esversion": 6,
+  "globals": {
+    "$": false,
+    "window": false,
+    "document": false,
+    "location": false,
+    "WebSocket": false,
+    "Chart": false,
+    "stompFrame": false
+  }
+}
+
+

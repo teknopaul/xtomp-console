@@ -1,0 +1,19 @@
+{
+  "name": "xtomp-console",
+  "version": "1.0.0",
+  "description": "GUI for xtomp-ngin",
+  "homepage": "http://xtomp.tp23.org",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "teknopaul",
+    "url": "me@teknopaul.com"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "main": "xtomp-console.js",
+  "repository" : {
+    "type" : "nmm",
+    "url" : "http://nmm:7333"
+  }
+}

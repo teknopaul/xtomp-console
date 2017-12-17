@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# remove the xtompc user, not the group other debs might need it
+#
+grep ^xtompc: /etc/passwd >/dev/null && userdel xtompc
+systemctl daemon-reload
+exit 0

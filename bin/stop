@@ -1,0 +1,11 @@
+#!/bin/bash -e
+#
+# stop gracefully
+#
+if [ -e /tmp/xtomp-console.sock ]
+then
+  echo EXIT | nc -U /tmp/xtomp-console.sock
+else
+  exit 1
+fi
+

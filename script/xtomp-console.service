@@ -1,0 +1,15 @@
+[Unit]
+Description=xtomp console
+After=network.target
+
+[Service]
+Type=simple
+PIDFile=/run/xtomp/xtomp-console.pid
+ExecStartPre=/bin/mkdir -p /var/run/xtomp
+ExecStart=/usr/local/xtomp-console/bin/start
+ExecStop=/usr/local/xtomp-console/bin/stop
+TimeoutStopSec=5
+KillMode=none
+
+[Install]
+WantedBy=multi-user.target

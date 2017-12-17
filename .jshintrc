@@ -1,0 +1,10 @@
+{
+  "node": true,
+  "esversion": 6,
+  "globals": {
+    "$": false,
+    "document": false
+  }
+}
+
+

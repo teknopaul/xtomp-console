@@ -1,0 +1,13 @@
+{
+  "name": "xtomp-console",
+  "version": "1.0.0",
+  "description": "GUI fro xtomp message broker",
+  "author": {
+    "name": "teknopaul",
+    "url": "me@teknopaul.com"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "main": "lib/xtomp-console.js"
+}

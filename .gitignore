@@ -1,0 +1,6 @@
+tmp/
+target/
+node_modules/
+deploy/root/
+control
+.aliases
