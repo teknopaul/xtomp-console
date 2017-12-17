@@ -1,3 +1,5 @@
+<img src="media/console.png" style="float:right"/>
+
 # xtomp-console
 
 ## Install
